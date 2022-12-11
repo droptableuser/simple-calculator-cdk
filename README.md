@@ -1,16 +1,14 @@
 
-# Welcome to your CDK Python project!
+# Simple Calculator REST API Gateway CDK example
 
-This is a blank project for CDK development with Python.
+This example [CDK](https://docs.aws.amazon.com/cdk/api/v2/python/index.html) project is based on the official
+[Simple Calculator](https://docs.aws.amazon.com/apigateway/latest/developerguide/simple-calc-nodejs-lambda-function.html) example. 
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+It is slightly modified:
+* API Gateway specific parameter mappings were removed, mappings are done in `lambda_function/index.js` code. 
+* Dependency to an S3 bucket was added for a history of function  calls.
 
-This project is set up like a standard Python project.  The initialization
-process also creates a virtualenv within this project, stored under the `.venv`
-directory.  To create the virtualenv it assumes that there is a `python3`
-(or `python` for Windows) executable in your path with access to the `venv`
-package. If for any reason the automatic creation of the virtualenv fails,
-you can create the virtualenv manually.
+# How to run this example
 
 To manually create a virtualenv on MacOS and Linux:
 
